@@ -13,6 +13,7 @@ public class Usuario {
     private String nombre;
     private String apellidos;
     private String clave;
+    private String perfil;
 
     public Long getId() {
         return id;
@@ -62,12 +63,21 @@ public class Usuario {
         this.clave = clave;
     }
 
+    public String getPerfil() {
+        return perfil;
+    }
+
+    public void setPerfil(String perfil) {
+        this.perfil = perfil;
+    }
+
     @Override
     public String toString() {
         return "id= " + id +
                 ", Nombre: " + nombre + " " +
                 ", Apellido: " + apellidos +" " +
                 ", Usuario: " + usuario + " " +
-                ", Clave: " + clave + " ";
+                ", Clave: " + clave + " " +
+                ", Perfil: " + perfil + " " ;
     }
 }
