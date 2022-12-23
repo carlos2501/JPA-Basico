@@ -20,7 +20,6 @@ public class JPAListar {
         // Listamos los usuarios
         usuarios.forEach(System.out::println);
         System.out.println();
-        System.out.println();
 
         // Una vez hecho, ES FUNDAMENTAL CERRAR LA CONEXIÓN A LA BBDD
         em.close();
