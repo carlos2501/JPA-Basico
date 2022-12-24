@@ -21,6 +21,9 @@ public class JPAsingleResult {
             no funciona con "usuario" porque hay más de un registro con ese perfil y devuelve el error
             NonUniqueResultException: query did not return a unique result
          */
+        // Utilizamos setMaxResult() para obligar a devolver SOLO UN registro y que no se produzca el error.
+        // Esto devuelve el primer registro encontrado
+        qry.setMaxResults(1);
         // Si no utilizamos el cast -(Usuario)- no funciona porque getSingleResult() devuelve un objeto genérico
         Usuario usu = (Usuario) qry.getSingleResult();
         System.out.println(usu);
