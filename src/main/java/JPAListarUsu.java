@@ -4,7 +4,7 @@ import jakarta.persistence.EntityManager;
 
 import java.util.List;
 
-public class JPAListar {
+public class JPAListarUsu {
     public static void main(String[] args) {
         /* Vamos a listar los contenidos de la tabla de usuarios
 
